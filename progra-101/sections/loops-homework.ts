@@ -6,7 +6,7 @@ export let limit:number = 50;
 //   console.log(base, 'x',i, ' = ', base * i);
 // } 
 
-//let i = 1;
+let i = 1;
 
 // while (i <= limit) {
 //   console.log( base, ' x ', i, ' = ', base * i++);
