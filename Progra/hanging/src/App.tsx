@@ -1,14 +1,15 @@
 import {letters} from './helpers/letters';
+import { HangImage } from './components/HangImage';
+
 import './App.css';
-import { HangImage } from './components/hangImage';
 
 function App() {
 
   return (
-  <div className='App'>
+  <div className="App">
     
       {/* Imagenes */}
-      <HangImage imageNumber={ 5 } />
+      <HangImage imageNumber={ 3 } />
 
       {/* Palabra oculta */}
       <h3>__________________</h3>

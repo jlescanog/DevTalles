@@ -24,24 +24,22 @@ const images: string[] = [
 
 interface Props {
 
-    imageNumber: number:
+    imageNumber: number;
 }
 
-export function HangImage( props: Props ) {
+export function HangImage( { imageNumber }: Props ) {
+
+    if ( imageNumber >= 9 ) {
+        imageNumber = 9;
+    }
     
-    console.log(props);
-
-
-
-
-
 
 
     return(
         <img 
-            src= { images[0] } 
-            alt='Hang image'
-            style={{ width: 250 }}
+            src= { images[ imageNumber ] } 
+            alt="Hang image" 
+            style={{ width: 250 }} 
         />
     ) // JSX Element
 }
